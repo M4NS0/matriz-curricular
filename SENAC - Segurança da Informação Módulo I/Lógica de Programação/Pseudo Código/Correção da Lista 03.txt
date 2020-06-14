@@ -1,0 +1,144 @@
+1. Ler dois números e verificar qual é menor e qual é maior.
+
+programa
+	declare N1, N2: real
+inicio
+	escreva "Este programa irá comparar 2 
+			 números digitado pelo usuário "
+	escreva "Informe o 1º nº: "
+	leia N1
+	escreva "Informe o 2º nº: "
+	leia N2
+
+	se (N1 > N2) então
+		escreva "O 1º nº digitado é maior que o 2º"
+	senão
+		escreva "O 2º nº digitado é maior que o 1º"
+	fim-se
+fim
+	
+	
+******************************************************************
+2. Ler os nomes e os pesos de duas pessoas e 
+   imprimir os dados da pessoa mais pesada.
+
+programa
+	declare NOME1, NOME2: literal
+			PESO1, PESO2: real
+inicio
+	escreva "Informe o nome da 1º pessoa: "
+	leia NOME1
+
+	escreva "Informe o peso em Kg da(o) ", NOME1, ": "
+	leia PESO1
+
+	escreva "Informe o nome da 2º pessoa: "
+	leia NOME2
+
+	escreva "Informe o peso em Kg da(o) ", NOME2, ": "
+	leia PESO2
+
+	se (PESO1 > PESO2) então
+		escreva "A pessoa mais pesada é ", NOME1, " e o seu peso = ", PESO1, " Kg"
+	senão
+		escreva "A pessoa mais pesada é ", NOME2, " e o seu peso = ", PESO2, " Kg"
+	fim-se
+fim
+
+
+******************************************************************
+3. Ler os anos de nascimento de duas pessoas 
+e calcular suas idades. Imprimir o nome e a idade de
+cada uma e indicar qual é a mais nova.
+
+programa
+	declare ANO1, ANO2, IDADE1, IDADE2, ANOATUAL: inteiro
+			NOME1, NOME2: literal
+inicio
+	escreva "Digite o ano vigente: "
+	leia ANOATUAL
+
+	escreva "Digite o nome da 1º pessoa: "
+	leia NOME1
+
+	escreva "Digite o ano de nascimento do(a) ", NOME1 , ": "
+	leia ANO1
+
+	escreva "Digite o nome da 2º pessoa: "
+	leia NOME2
+
+	escreva "Digite o ano de nascimento do(a) ", NOME2 , ": "
+	leia ANO2
+	
+	IDADE1 <- ANOATUAL - ANO1
+	IDADE2 <- ANOATUAL - ANO2
+
+	se (IDADE1 < IDADE2) então
+		escreva NOME1, " tem ", IDADE1, " anos e é mais novo que ",
+				NOME2, " com ", IDADE2, " anos"
+	senão
+		escreva NOME2, " tem ", IDADE2, " anos e é mais novo que ",
+				NOME1, " com ", IDADE1, " anos"
+	fim-se
+fim
+
+******************************************************************
+4. Ler um número e verificar se ele é par ou ímpar. Observação: para o número ser par, o resto de sua
+divisão por dois deve ser igual a zero.
+
+programa
+	declare NUM: inteiro
+inicio
+	escreva "Digite um nº inteiro qualquer: "
+	leia NUM
+
+	se (resto(NUM, 2) = 0) então
+		escreva "O número ", NUM, " é PAR!"
+	else
+		escreva "O número ", NUM, " é IMPAR!"
+	fim-se
+fim
+
+******************************************************************
+5. Ler dois valores e mostrar a diferença entre eles (o maior valor menos o menor valor).
+
+programa
+	declare N1, N2, DIF: real
+inicio
+	escreva "Informe o 1º nº: "
+	leia N1
+	escreva "Informe o 2º nº: "
+	leia N2
+
+	se (N1 > N2) então
+		DIF <- N1 - N2
+		escreva N1, " - ", N2, " = ", DIF
+	senão
+		DIF <- N2 - N1
+		escreva N2, " - ", N1, " = ", DIF
+	fim-se
+fim
+
+******************************************************************
+6. Uma empresa dá um prêmio aos funcionários que cumprem 
+ou ultrapassam determinado valor de vendas de produtos. 
+A cada funcionário foi estabelecido um valor a ser alcançado. 
+Faça um algoritmo para ler o valor fixado e o valor de vendas 
+de um funcionário, e imprimir a mensagem "Ganhou!", 
+se o funcionário tiver conseguido o prêmio, e "Não ganhou!", 
+se não tiver conseguido.
+
+programa
+	declare META, VENDA: real
+inicio
+	escreva "Digite a meta a ser alcaçada pelo vendedor: "
+	leia META
+	escreva "Digite a venda realizada pelo vendedor: "
+	leia VENDA
+
+	se (VENDA >= META) então
+		escreva "Ganhou!"
+	senão
+		escreva "Não ganhou!"
+	fim-se
+fim

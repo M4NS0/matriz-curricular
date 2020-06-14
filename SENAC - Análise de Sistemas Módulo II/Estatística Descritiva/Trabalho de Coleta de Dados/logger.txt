@@ -1,0 +1,71 @@
+#!/bin/bash
+
+files=$(yad --width 100 --height 100  --image image.jpeg  --title "StudLog!" \--text="\n\n\n\n\nStudLog - Cria um registro de atividade de estudo.Esse registro pode servir como uma Api para alimentar tabelas, com fins estatísticos. O registro será gravado no arquivo Api.txt contido na pasta do programa.\n\n" \
+		--button="Baixar Api e Planilha:2" \
+		--button="Atividade:3" \
+		--button="Assunto da Atividade:4" \
+		--button="Gravar e enviar para Núvem:5" \
+		--button="Abrir dados (Google Sheets):6" \
+		--button="Abrir dados (Gedit):7" \
+		--button="Enviar Api e programa alterados:8" \
+		--on-top \
+		--center \
+)
+ret=$?
+
+
+if [[ $ret -eq 2 ]]; then
+gdrive-linux-x64 download --force 1lAvKPS2DFAoD7nzvhZ7toNHBmybN5-xn  # baixando api
+gdrive-linux-x64  export --force 1KIpallGHLz6bXUT6Sp_Qmgu3LkNR5jqZKkE-yv58bkY # baixando planilha
+soffice --headless --convert-to xlsx:"Calc MS Excel 2007 XML" Registro.csv
+yad --form --title "StudLog" --text="\n\tApi e Planilha baixadas com sucesso!   \t\n\tPlanilha devidamente convertida para formato XMLX    \t \n"
+
+echo ${atividade} >> Api.txt
+./logger
+fi
+
+if [[ $ret -eq 3 ]]; then
+atividade=$(yad --form --title "Insira o nome da atividade efetuada:" --field="\tManutenção, Planejamento, Estudo, Tarefa, Aula, Desenvolvimento...:    \t   ")
+yad --form --title "StudLog!" --text="\n\n\tA atividade selecionada é:  $atividade     \n\n"
+echo ${atividade} >> Api.txt
+./logger
+fi
+
+if [[ $ret -eq 4 ]]; then
+assunto=$(yad --form --title "Insira o assunto: " --field="\tJava, Python, Julia, C ++ ou ainda IDEs, Instalação de Ferramentas, Sistema Operaçional, Códigos...:      ")
+yad --form --title "StudLog!" --text="\n\n\tO Assunto selecionado é:  $assunto      \n\n"
+echo ${assunto} >> Api.txt
+./logger
+fi
+
+if [[ $ret -eq 5 ]]; then
+
+uptime=$(uptime)
+uptimeP=$(uptime -p )
+echo ${uptime}  >> Api.txt
+echo ${uptimeP} >> Api.txt
+data=$(date -u)
+echo ${data} >> Api.txt
+echo "" >> Api.txt
+gdrive-linux-x64 update 1lAvKPS2DFAoD7nzvhZ7toNHBmybN5-xn Api.txt
+yad --form --title "StudLog" --text="\n\tDados Coletados e Gravados no Drive com sucesso!\n"
+./logger
+fi
+
+if [[ $ret -eq 6 ]]; then
+bash /usr/bin/firefox --new-window "https://docs.google.com/spreadsheets/d/1KIpallGHLz6bXUT6Sp_Qmgu3LkNR5jqZKkE-yv58bkY/edit#gid=986369796"
+./logger
+fi
+
+if [[ $ret -eq 7 ]]; then
+gedit Api.txt
+./logger
+fi
+
+if [[ $ret -eq 8 ]]; then
+gdrive-linux-x64 update 1EomTpZ_9kx7lXy_e3QKUP2T2EdAPEJI4 /home/linuxlite/Workspaces/Shell\ Projects/Autorais/Logger\ para\ aula\ de\ estatistica/logger 
+
+gdrive-linux-x64 update 1lAvKPS2DFAoD7nzvhZ7toNHBmybN5-xn Api.txt
+yad --form --title "StudLog" --text="\n\tA Api e programa atualizadas com sucesso!\n"
+./logger
+fi

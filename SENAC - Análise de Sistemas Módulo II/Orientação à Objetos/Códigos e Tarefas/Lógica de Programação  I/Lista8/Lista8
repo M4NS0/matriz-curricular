@@ -1,0 +1,88 @@
+1. Escreva um algoritmo que receba dois 
+números  inteiros,  calcule  e  escreva:
+
+a) soma dos dois números
+b) subtração do primeiro pelo segundo
+c) subtração do segundo pelo primeiro
+d) multiplicação dos dois números
+e) divisão do primeiro pelo segundo
+f) divisão do segundo pelo primeiro
+g) o primeiro elevado ao quadrado.
+
+
+2. Escreva um algoritmo  que receba  como 
+entrada três números inteiros e verifique
+se a soma dos mesmos é  maior  ou igual a 
+100. O algoritmo deve emitir uma mensagem
+em caso positivo.
+
+
+3. Escreva um algoritmo que receba uma medida em pés,
+faça as conversões a seguir e mostre os  resultados.
+  
+a) polegadas
+b) jardas
+c) milhas
+
+Sabe-se que:
+1 pé = 12 polegadas
+1 jarda = 3 pés
+1 milha = 1760 jardas.
+
+
+4. Um supermercado deseja reajustar os preços de seus
+produtos usando o seguintecritério: o produto  poderá
+ter seu preço aumentado ou  diminuído. Para alterar o 
+preço, o produto deve preencher  pelo  menos  um  dos 
+requisitos a seguir:
+
+(grafico)
+
+Faça um algoritmo que receba  o  preço atual e a venda 
+mensal média do produto, calcule e mostre o novo preço.
+
+
+5. Uma loja usa os seguintes códigos para as transações
+ de cada dia:
+
+“d” – para compras à vista em dinheiro;
+“c” – para compras ‘a vista em cheque.
+
+É dada uma lista de transações contendo o valor de  cada 
+compra e o respectivo código da transação. Considere que 
+houve 25 transações no dia.
+
+Faça um algoritmo que calcule e imprima:
+- valor total das compras à vista em dinheiro;
+- valor total das compras à vista em cheque;
+- valor total das compras efetuadas..
+
+
+6. Uma  pessoa  construindo sua  residência  resolveu  colocar 
+em sua casa uma caixa  para servir como  reservatório de  água.
+Considerando que a  caixa  seja  retangular, faça um algoritmo
+que leia as dimensões da caixa (comprimento, altura e largura),
+calcule e escreva o volume de  água  que  pode ser  armazenado.
+
+
+7. Tem-se um conjunto de dados contendo a altura e o sexo 
+(masculino, feminino) de10 pessoas. Fazerum programa  que 
+calcule e escreva:
+
+a) A maior e a menor altura do grupo
+b) A média de altura das mulheres
+c) O número de homens
+
+
+8. Fazer um programa  para  ler  a  base e  a 
+altura de 10 triângulos e imprimir suas áreas
+
+
+System.out.println("\n\n _______________________________________________________________________________\n" +
+				"|\t\t\t\t\t\t\t\t\t\t|\n" +
+				"|\t  \t\t|\n" + 
+				"|\t  \t\t|\n" + 
+				"|\t\t\t\t\t\t\t\t\t\t|\n" +
+				"|_______________________________________________________________________________|");
+		
+

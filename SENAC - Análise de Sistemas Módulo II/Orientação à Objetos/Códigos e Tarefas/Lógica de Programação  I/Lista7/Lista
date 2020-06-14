@@ -1,0 +1,61 @@
+1. Laço de Repetição 
+1.1. Enquanto, Repita e Para 
+
+1. Fazer um algoritmo que imprima na tela todos os números pares de 1 a n, onde n e fornecido pelo 
+usuário. 
+
+2. Fazer um algoritmo que calcule e imprima o valor do somatório de todos os números de 1 a n, onde n e 
+fornecido pelo usuário. 
+
+3. Uma Companhia de teatro planeja dar uma série de espetáculos. A direção calcula que, a R$ 6,00 o ingresso, serão vendidos 130 ingressos e as despesas montarão em R$300,00. A uma diminuição de R$ 0,60 no preço dos ingressos espera-se que haja um aumento de 30 ingressos vendidos. Fazer um algoritmo que escreva uma tabela de valores do lucro esperado em função do preço do ingresso, fazendo-se variar este preço de R$ 6,00 a R$ 1,00 de R$ 0,60 em R$ 0,60. Escreva ainda o lucro máximo esperado, o preço e o número de ingressos correspondentes. 
+
+4. Na cidade de Tokio existe cerca de 55000 motocicletas. Já a cidade de Aparecida Goiânia tem cerca 
+de 1500 motocicletas. Crie um algoritmo que calcule em quantos anos a cidade de Aparecida de Goiânia
+ superará em números de motocicletas a cidade de Tokio, sendo que a taxa de aquisição de motocicletas 
+ é de 0,5% a.m. para Tokio e 0,89% a.m. para Aparecida de Goiânia. 
+
+5. Foi feita uma pesquisa para determinar o índice de mortalidade infantil
+ em um certo período. Fazer um algoritmo que: 
+• leia inicialmente o número de crianças nascidas no período; 
+• leia, em seguida, um número indeterminado de linhas, contendo, cada uma, 
+o sexo de uma criança morta (masculino, feminino) e o número de meses de 
+vida da criança. A última linha (que identificará o final da entrada de dados)
+conterá a palavra “vazio” no lugar do sexo. 
+• Determine e imprima: a) a porcentagem de crianças mortas no período; 
+b) a porcentagem de crianças do sexo masculino mortas no período; c)
+ a porcentagem de crianças que viveram 24 meses ou menos no período. 
+
+6. O IBOPE encomendou-lhe um programa para 
+registrar as pesquisas das eleições entre 
+os candidatos A, B e C. Faça um programa que
+dado o candidato escolhido (A, B ou C), a 
+idade e o sexo do eleitor(a), para um número 
+indeterminado de eleitores, calcule e escreva: 
+ 
+a) Qual o candidato mais votado ?
+b) Qual a média de idade entre os eleitores do candidato mais votado ? 
+c) Qual o candidato preferido dos homens ?
+
+7. Escreva um algoritmo que imprima todos os números múltiplos de 5, no intervalo fechado de 1 a 500. 
+
+8. Um cinema possui capacidade de 100 lugares e está sempre com ocupação total. Certo dia, cada 
+espectador respondeu a um questionário, no qual constava: 
+• Sua idade; 
+• Sua opinião em relação ao filme, segundo as seguintes notas: \
+Elabore um algoritmo que, lendo estes dados, calcule e imprima: 
+• A quantidade de respostas ótima; 
+• A diferença percentual entre respostas bom e regular; 
+• A média de idade das pessoas que respondeu ruim; 
+• A percentagem de respostas péssimo e a maior idade que utilizou esta opção; 
+• A diferença de idade entre a maior idade que respondeu ótimo e a maior idade que respondeu ruim. 
+
+9. Faça um algoritmo que leia vários números positivos e calcule e escreva a soma dos números pares e a 
+média dos números impares. 
+
+10. Em um ônibus estão n pessoas. Faça um algoritmo que leia, para cada pessoa: a idade, o peso, a altura, 
+o sexo (F ou M) e calcule: 
+• A idade média entre elas; 
+• O somatório dos pesos; 
+• A menor e a maior altura, respectivamente; 
+• A porcentagem de mulheres com idade inferior a 25 anos entre as mulheres. 
+• Use como flag idade –1, faça validação para idade, peso e altura. 

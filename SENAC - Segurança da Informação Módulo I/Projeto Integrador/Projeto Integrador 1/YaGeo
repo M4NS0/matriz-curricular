@@ -1,0 +1,59 @@
+#!/bin/bash
+
+files=$(yad --width 100 --height 100 --title "YaGeo!" \--text="\n\n\tO YaGeo! é um programa de GeoLocalização por IP. Foi desenvolvido em Shell, pelos alunos: Alexandre Paiva e Bruno Manso.\n\t- Atenção!! Esse programa precisa da instalação de dependencias,caso você ainda nao utilizou ele nessa maquina use as primeira duas opções: \n\n\tA opção 'Insere IP' irá requisitar um IP Externo para efetuar a busca futura \n\tA opção 'Encontra IP' ira retornar e gravar seu proprio IP para efetuar a Geo Localização\n\tA opção 'Executa GeoLookup' irá executar no IP acima registrado e gerar um Relatório\n\tA última opção abrirá uma janela de navegador na página do Google Maps com a Geolocalização do IP requisitado.\n\n" \
+		--button="Instala o GeoLookup:2" \
+		--button="Selecionar IP:3" \
+		--button="Encontra IP:4" \
+		--button="Executa GeoLookup:5" \
+		--button="Abre Browser com Mapa:6" \
+		--button="Cancel:1" \
+		--on-top \
+		--center \
+)
+ret=$?
+[[ $ret -eq 1 ]] && exit 0 #sair
+if [[ $ret -eq 2 ]]; then #Instala
+sudo apt install geoip-bin -y  && sudo apt-get install geoip-database && sudo apt-get install geoip-database-extra && yad --form --text="\n\n\tGeoIP instalado com sucesso  !       \n\n" && ./zenGeo
+./YaGeo
+fi
+if [[ $ret -eq 3 ]]; then #Insere IP
+MEUIP=$(yad --form --title "YaGeo!" --field="Insira um IP valido: ")
+yad --form --title "YaGeo!" --text="\n\n\tO IP Selecionado é:  $MEUIP      \n\n"  
+./YaGeo
+fi
+if [[ $ret -eq 4 ]]; then #Encontra IP proprio
+MEUIP=`host myip.opendns.com resolver1.opendns.com | grep "myip.opendns.com has" | awk '{print $4}'`
+IP=`echo $MEUIP | cut -d '{' -f1`
+yad --form --title "YaGeo!" --text="\n\n\tSeu IP é:  $MEUIP      \n\n"  
+./YaGeo
+fi
+if [[ $ret -eq 5 ]]; then	#Executa GeoLookup
+MEUIP=`host myip.opendns.com resolver1.opendns.com | grep "myip.opendns.com has" | awk '{print $4}'`
+IP=`echo $MEUIP | cut -d '{' -f1`
+PAIS=`geoiplookup $IP | grep Country | cut -d , -f2`
+CITY=`geoiplookup $IP | grep City | cut -d : -f2`
+LAT=`echo $CITY | cut -d , -f6`
+LON=`echo $CITY | cut -d , -f7`
+CIDADE=`echo $CITY | cut -d , -f 3`
+ASN=`geoiplookup $IP | grep ASNum | cut -d : -f2`
+yad --form --title "YaGeo!" --text="\n\n Pais: $PAIS. 
+									\n Cidade: $CIDADE. 
+								  \n Latitude: $LAT.
+								 \n Longitude: $LON. 
+									   \n ASN: $ASN\t\n\n"
+./YaGeo
+fi
+if [[ $ret -eq 6 ]]; then #Abre Browser com mapa
+MEUIP=`host myip.opendns.com resolver1.opendns.com | grep "myip.opendns.com has" | awk '{print $4}'`
+IP=`echo $MEUIP | cut -d '{' -f1`
+PAIS=`geoiplookup $IP | grep Country | cut -d , -f2`
+CITY=`geoiplookup $IP | grep City | cut -d : -f2`
+LAT=`echo $CITY | cut -d , -f6`
+LON=`echo $CITY | cut -d , -f7`
+CIDADE=`echo $CITY | cut -d , -f 3`
+ASN=`geoiplookup $IP | grep ASNum | cut -d : -f2`
+LATLON=$(echo "$LAT,$LON" |tr -d '[:space:]')
+bash /usr/bin/firefox --new-window "http://maps.google.com/maps?q=$LATLON"
+./YaGeo
+fi
+

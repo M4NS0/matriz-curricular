@@ -1,0 +1,37 @@
+create database escola
+create table alunos.escola (id int not null, nome varchar(50) not null, email varchar(50) not null);
+insert into table alunos.escola (id,nome,email)
+	values	 (1, 'João Fernando', joao@gmail.com),
+			 (2, 'Maria Carvalho', maria@gmail.com),
+			 (3, 'Bruna Santos', bruna@gmail.com),
+			(1, 'Pedro da Silva', pedro@gmail.com),
+			(1, 'Tiago Pereira', tiago@gmail.com);
+
+SELECT    * FROM  aluno;
+SELECT   'Maria Carvalho',   email FROM  aluno;
+create table professores.escola  (id int not null,nome varchar(50) not null, data  date  not null, Id_turma int not null);
+insert into table alunos.escola (id,nome,dtcad,Id_turma) 
+	values 	 (1, 'Edson Marques', 2018-03-01, 1),
+			 (2, 'Pedro Botelho', 2018-03-01, 1),
+			 (2, 'Janaina Braga', 2016-06-04, 2),
+			 (2, 'Lucas Gonçalves', 2017-02-01, 2),
+			 (2, 'Gilmar Mendes', 2017-03-01, 1);
+
+SELECT 'Edson Marques' dtcad as Admissao, id_turma  as Turma FROM professor;
+create table turma.escola (id int not null,	nome varchar(50) not null);
+insert into table turma.escola (id,nome)
+	values 	(1, 'Turma A'),
+			(2, 'Turma B');
+
+SELECT P.nome as Professor,
+	T.nome 	as 	Turma
+	FROM 	professor P, turma T
+	WHERE 	P.id_turma = T.id;
+
+alter table professoeres.escola
+	add column email varchar(50) not null;
+
+select distinct email from professor;
+select top 3 * from professor;
+select top 3 * from professor order by nome ASC;
+

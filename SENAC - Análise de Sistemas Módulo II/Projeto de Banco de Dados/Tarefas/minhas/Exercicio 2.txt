@@ -1,0 +1,86 @@
+create database loja;
+create table loja.produtos 
+	(id 				int 			not null,
+	nome 			varchar(50) 	not null,
+	preco			decimal(15) 	not null,
+	id_categoria		int			not null);
+
+insert into table produtos (id,nome,preco,id_produto)
+	values (1,Bola,35.00,1);
+insert into table produtos (id,nome,preco,id_produto)
+	values (2,Patinete,120.00,1);
+insert into table produtos (id,nome,preco,id_produto)
+	values (3,Carrinho,15.00,1);
+insert into table produtos (id,nome,preco,id_produto)
+	values (4,Skate,296.00,1);
+insert into table produtos (id,nome,preco,id_produto)
+	values (5,Notebook,3500.00,2);
+insert into table produtos (id,nome,preco,id_produto)
+	values (6,Monitor LG,19,450.00,2);
+insert into table produtos (id,nome,preco,id_produto)
+	values (7,O Diário de Anne Frank,45.00,3);
+insert into table produtos (id,nome,preco,id_produto)
+	values (8,O dia do Curinga,65.00,3);
+insert into table produtos (id,nome,preco,id_produto)
+	values (9,O mundo de Sofia,48.00,3);
+insert into table produtos (id,nome,preco,id_produto)
+	values (10,Através do Espelho,38.00,3);
+
+SELECT		C.nome 
+as 			Categoria,
+MAX			(preco) 
+as 			MAIOR_PRECO
+FROM		Produto P, categoria_produto C
+WHERE		P.id_categoria = C.id
+GROUP BY  	C.id
+
+SELECT		C.nome 
+as 			Categoria,
+MIN			(preco) 
+as 			MENOR_PRECO
+FROM  		Produto P, categoria_produto C
+WHERE 		P.id_categoria = C.id
+GROUP BY  	C.id
+
+SELECT  	
+COUNT		(id) 
+as 			TOTAL
+FROM  		produto
+
+SELECT  	C.nome 
+as 			Categoria,
+COUNT		(P.id) 
+as 			TOTAL_PRODUTOS
+FROM  		Produto P, categoria_produto C
+WHERE   	P.id_categoria = C.id
+GROUP BY  	C.id
+
+SELECT  	P.nome,
+SUM			(V.valor) 
+as 			TOTAL_RECEBIDO
+FROM  		produto P, venda_produto V
+WHERE 		P.id = V.id_produto
+GROUP BY 	P.id
+
+SELECT  
+AVG			(preco) 
+as 			PRECO_MEDIO
+FROM   		produto
+
+SELECT		C.nome 
+as 			Categoria,
+COUNT		(P.ID) 
+as 			TOTAL_DE_PRODUTOS,
+AVG			(P.preco) 
+as 			PRECO_MEDIO
+FROM  		produto P, categoria_produto C
+WHERE  		P.id_categoria = C.id
+GROUP BY  	C.id
+
+SELECT    	nome,preco
+FROM     	Produto 
+WHERE    	preco > (
+SELECT 
+AVG			(preco) 
+FROM     	produto)
+

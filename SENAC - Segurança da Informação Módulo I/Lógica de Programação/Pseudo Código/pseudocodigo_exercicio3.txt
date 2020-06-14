@@ -1,0 +1,162 @@
+1) 
+
+Programa
+
+Declare N1, N2  :real
+
+	escreva "Este programa tem objetivo de ler dois números e verificar qual é menor e qual é maior"
+	
+	escreva "informe o primeiro numero: "
+	leia N1
+	
+	escreva "informe o segundo numero: "
+	leia N2
+	
+	se (N1 > N2)
+	escreva "o primeiro numero é maior q o segundo "
+	
+	senao
+	escreva "o primeiro numero é menor q o segundo "
+	
+fim
+
+2)
+
+Programa
+
+Declare nome1, nome2 :literal
+Declare peso1, peso2 :real
+
+	escreva "Este programa vai ler os nomes e os pesos de duas pessoas e imprimir os dados da pessoa mais pesada"
+	
+	escreva "informe o nome da primeira pessoa"
+	leia nome1 
+	escreva "informe o peso de",nome1,":"
+	leia peso1
+	escreva "informe o nome da segunda pessoa
+	leia nome2
+	escreva "informe o peso de ",nome2,":"
+	
+	se peso1 > peso2
+	escreva  ",nome1," é mais pesada que ",nome2,"
+	
+	senao
+	escreva ",nome1," é mais leve que ",nome2,"
+	
+fim
+
+3)
+
+Programa
+
+	
+Declare ano1, ano2 :numerico
+Declare nome1, nome2 :literal
+
+	escreva "Este programa deve ler os anos de nascimento de duas pessoas e calcular suas idades. Imprimir o nome e a idade de cada uma e indicar qual é a mais nova."
+
+	escreva "Digite o nome da primeira pessoa"
+	leia nome1
+	
+	escreva "Digite o ano de nascimento de ",nome1,":"
+	leia ano1
+	
+	escreva "Digite o nome da segunda pessoa"
+	leia nome2
+	
+	escreva "Digite o ano de nascimento de ",nome2,":"
+	leia ano2
+	
+se ano1 < ano2
+escreva "",nome2," é mais velha que ",nome1,""  
+
+senao
+escreva "",nome2," é mais nova que ",nome1,"
+
+fim
+
+4)
+
+Programa
+
+Declare numero :inteiro
+
+	escreva "Este programa tem objetivo de ler um número e verificar se ele é par ou ímpar. Observação: para o número ser par, o resto de sua divisão por dois deve ser igual a zero."
+	
+	escreva "Digite um numero: "
+	leia numero
+	
+	se resto(numero / 2) = 0
+	escreva "Esse numero é par"
+
+	se nao
+	escreva "Esse numero é impar"
+
+fim
+
+
+5)
+
+Programa
+
+Declare valor1, valor2, diferença1, diferença2 :real
+
+	escreva "Esse programa vai ler dois valores e mostrar a diferença entre eles (o maior valor menos o menor valor)"
+
+	escreva "Digite o primeiro valor: "
+	leia valor1
+	
+	escreva "Digite o segundo valor: "
+	leia valor2
+	
+diferença = valor1 - valor2
+
+	
+	diferença1 = valor1 - valor2
+	diferença2 = valor2 - valor1
+	
+	se valor1 > valor2 
+	escreva "A diferença entre os valores é ",diferença,"
+	
+	se nao
+	diferença2 = valor2 - valor1
+	escreva "A diferença entre os valores é 
+
+fim
+
+6)
+
+Programa
+
+Declare valorfixado, valordevendas :real
+Declare nome :literal
+
+	escreva " O programa a seguir, resolve o seguinte problema: Uma empresa dá um prêmio aos funcionários que cumprem ou ultrapassam determinado valor de vendas de produtos. A cada funcionário foi estabelecido um valor a ser alcançado. Faça um algoritmo para ler o valor fixado e o valor de vendas de um funcionário, e imprimir a mensagem "Ganhou!", se o funcionário tiver conseguido o prêmio, e "Não ganhou!", se não tiver conseguido."
+
+	escreva "Digite o valor fixado"
+	leia valorfixado
+	
+	escreva "Digite o valor do total de vendas do funcionario"
+	leia valordevendas
+	
+	se valordevendas > valorfixado
+	escreva "Parabéns você ganhou!"
+	
+	se nao 
+	escreva "Loser!"
+	
+fim
+
+
+
+
+
+
+	
+
+
+	
+	
+	
+	
+	

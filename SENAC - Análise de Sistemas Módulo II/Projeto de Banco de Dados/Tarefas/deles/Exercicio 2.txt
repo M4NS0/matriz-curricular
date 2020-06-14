@@ -1,0 +1,79 @@
+SELECT
+  C.nome as Categoria,
+  MAX(preco) as MAIOR_PRECO
+FROM
+  Produto P, categoria_produto C
+WHERE 
+  P.id_categoria = C.id
+GROUP BY
+  C.id
+
+SELECT
+  C.nome as Categoria,
+  MIN(preco) as MENOR_PRECO
+FROM
+  Produto P, categoria_produto C
+WHERE 
+  P.id_categoria = C.id
+GROUP BY
+  C.id
+
+SELECT
+  COUNT(id) as TOTAL
+FROM
+  produto
+
+SELECT
+  C.nome as Categoria,
+  COUNT(P.id) as TOTAL_PRODUTOS
+FROM
+  Produto P, categoria_produto C
+WHERE 
+  P.id_categoria = C.id
+GROUP BY
+  C.id
+
+SELECT
+  P.nome,
+  SUM(V.valor) as TOTAL_RECEBIDO
+FROM
+  produto P, venda_produto V
+WHERE P.id = V.id_produto
+GROUP BY P.id
+
+SELECT
+  AVG(preco) as PRECO_MEDIO
+FROM 
+  produto
+
+SELECT
+  C.nome as Categoria,
+  COUNT(P.ID) as TOTAL_DE_PRODUTOS,
+  AVG(P.preco) as PRECO_MEDIO
+FROM
+  produto P, categoria_produto C
+WHERE
+  P.id_categoria = C.id
+GROUP BY
+  C.id
+
+SELECT
+    nome,
+    preco
+FROM 
+    Produto 
+WHERE
+    preco > (
+SELECT 
+    AVG(preco) 
+FROM 
+    produto
+)
+
+SELECT
+ [ coluna1, coluna2 | subquery ] AS [ coluna3 ]
+ FROM
+ [ tabela | subquery AS tabela]
+ WHERE
+ [ condicao1,  condicao2 |  coluna ] = [ subquery ]
+[ coluna ] IN [ subquery ]
