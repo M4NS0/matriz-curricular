@@ -1,10 +1,14 @@
+<div style="background-color:rgba(0, 84, 122, 1);  vertical-align: middle">
+<a>
+
 # Matérias e seus conteúdos
+
 
 
 
 Todos os módulos cursados até agora, desde Sistemas de Informação até Análise e Desenvolvimento de Sistemas, incluindo:
 
-  - Materiais didático fornecidos pelos professores
+  - Materiais didáticos fornecidos pelos professores
   - Exercícios
   - Resumos
   - Provas
@@ -45,6 +49,7 @@ Para facilitar as buscas, uma tabela com  a localização de todos os códigos e
 
 #
 ###Algorítmos Úteis
+#
 Sessão dedicada a algorítmos úteis e reutilizáveis
 ##
 | Descrição | Linguagem | Link |
@@ -91,4 +96,7 @@ Projetos, em diversas linguagens, nos quais me envolvi
 [Versão bonita dessa mesma página](https://m4ns0.github.io/)  
 [Curriculum vitae](https://)  
 
+<span style="color:blue">some *This is Blue italic.* text</span>
 
+</a>
+</div>
