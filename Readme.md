@@ -67,11 +67,11 @@ Projetos, em diversas linguagens, nos quais me envolvi
 
 | Nome | Descrição | Linguagem | Link |
 | ------ | ------ | ------ |------ |
-| Agenda Ligada | Agenda de contatos em JFrame/Swing que contém uma lista ligada como estrutura de armazenamento  | **Java** |https://github.com/M4NS0/Projetos/tree/master/Agenda%20Ligada|
+| Agenda Ligada | Agenda de contatos em JFrame/Swing que contém uma Lista Ligada como Estrutura de Armazenamento  | **Java** |https://github.com/M4NS0/Projetos/tree/master/Agenda%20Ligada|
 | Analizador CSV | Programa de Análise Estatística para Planilhas | **Java** | https://github.com/M4NS0/Projetos/tree/master/Analizador%20CSV |
 | Calculadora | Calculadora simples em JFrame/Swing | **Java** | https://github.com/M4NS0/Projetos/tree/master/Calculadora |
 | Chat-in | Comunicador Criptografado com Envio e Recebimento de Arquivos | **Java** | https://github.com/M4NS0/Projetos/tree/master/Chat-in |
-| Jogo Pokemon | Jogo Temático | **Java** | https://github.com/M4NS0/Projetos/tree/master/Jogo%20Pokemon |
+| Pokemon | Jogo Temático | **Java** | https://github.com/M4NS0/Projetos/tree/master/Jogo%20Pokemon |
 | EColeta | Protótipo de Aplicativo Web de Empresa de Coleta de Resíduos | **Html/Css/JavaScript** |https://github.com/M4NS0/Projetos/tree/master/EColeta |
 | Geo Ip Lookup | Localizador geográfico por IP | **Shell Script** | https://github.com/M4NS0/Projetos/tree/master/Geo%20Lookup%20IP|
 | StudLog | Programa de Coleta de dados de uma máquina para fins Estatísticos |**Shell Script** | https://github.com/M4NS0/Projetos/tree/master/StudLog |
