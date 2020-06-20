@@ -1,17 +1,7 @@
 
-<!-->
-[#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
+# Matérias e seus conteúdos
 
 
-<div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:center; vertical-align: middle; padding:40px 0;">
-<a href="/donate">DONATE</a>
-
-
-
-</div>
-<-->
-
-<div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:center; vertical-align: middle; padding:40px 0;"> Matérias e seus conteúdos </div>
 
 
 Todos os módulos cursados até agora, desde Sistemas de Informação até Análise e Desenvolvimento de Sistemas, incluindo:
