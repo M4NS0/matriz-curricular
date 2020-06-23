@@ -42,7 +42,9 @@ Para facilitar as buscas, uma tabela com  a localização de todos os códigos e
 | Técnicas de Programação         | **Java**   | https://git.io/JfbMd |
 
 #
+
 ###Algorítmos Úteis
+
 #
 Sessão dedicada a algorítmos úteis e reutilizáveis
 ##
