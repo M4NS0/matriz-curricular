@@ -20,7 +20,7 @@ Todos os módulos cursados até agora, desde Sistemas de Informação até Anál
 ##
 
 
-Para facilitar as buscas, uma tabela com  a localização de todos os códigos estudados até o presente momento 
+Para facilitar as buscas, a localização de todos os códigos estudados até o presente momento 
 
 | Matéria                         | Linguagem  | Link                 |
 | ------------------------------- | ---------- | -------------------- |
@@ -83,8 +83,7 @@ Projetos, em diversas linguagens, nos quais me envolvi
  - Módulo Final/Projeto Integrador
 
 #
-#
-#
+
 
 [Versão bonita dessa mesma página](https://m4ns0.github.io/)  
 [Curriculum vitae](https://)  
