@@ -43,7 +43,7 @@ Para facilitar as buscas, uma tabela com  a localização de todos os códigos e
 
 #
 
-##Algorítmos Úteis
+### Algorítmos Úteis
 
 Sessão dedicada a algorítmos úteis e reutilizáveis
 ##
