@@ -13,15 +13,14 @@ Todos os módulos cursados até agora, desde Sistemas de Informação até Anál
 ### Mapa de Repositórios
 
 ##
-##
 
 | Nome           | Link                                | Conteúdo                         |
 | -------------- | ----------------------------------- | -------------------------------- |
 | **Projetos**   | https://github.com/M4NS0/Projetos   | Repositório de projetos pessoais |
 | **Workspaces** | https://github.com/M4NS0/Workspaces | Repositório com todos os códigos** |
 
-#
-#
+##
+
 
 Para facilitar as buscas, uma tabela com  a localização de todos os códigos estudados até o presente momento 
 
@@ -41,7 +40,7 @@ Para facilitar as buscas, uma tabela com  a localização de todos os códigos e
 | Programação Orientada a Objetos | **Java**   | https://git.io/JfbM5 |
 | Técnicas de Programação         | **Java**   | https://git.io/JfbMd |
 
-#
+##
 
 ### Algorítmos Úteis
 
@@ -61,12 +60,14 @@ Sessão dedicada a algorítmos úteis e reutilizáveis
 | Reconhecimento de Texto em Imagem (com Gravação) | **Java**  | https://git.io/JfbDJ |
 | Reconhecimento de Texto em imagem                | **Java**  | https://git.io/JfbDU |
 
-#
+##
 
 ### Projetos 
 
 Projetos, em diversas linguagens, nos quais me envolvi
+
 ##
+
 | Nome | Descrição | Linguagem | Link |
 | ------ | ------ | ------ |------ |
 | Agenda Ligada | Agenda de contatos em JFrame/Swing que contém uma Lista Ligada como Estrutura de Armazenamento  | **Java** |https://git.io/JfbDk|
