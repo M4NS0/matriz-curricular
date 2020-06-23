@@ -12,8 +12,6 @@ Todos os módulos cursados até agora, desde Sistemas de Informação até Anál
 
 ### Mapa de Repositórios
 
-##
-
 | Nome           | Link                                | Conteúdo                         |
 | -------------- | ----------------------------------- | -------------------------------- |
 | **Projetos**   | https://github.com/M4NS0/Projetos   | Repositório de projetos pessoais |
@@ -23,8 +21,6 @@ Todos os módulos cursados até agora, desde Sistemas de Informação até Anál
 
 
 Para facilitar as buscas, uma tabela com  a localização de todos os códigos estudados até o presente momento 
-
-##
 
 | Matéria                         | Linguagem  | Link                 |
 | ------------------------------- | ---------- | -------------------- |
@@ -43,9 +39,8 @@ Para facilitar as buscas, uma tabela com  a localização de todos os códigos e
 ##
 
 ### Algorítmos Úteis
-
 Sessão dedicada a algorítmos úteis e reutilizáveis
-##
+
 
 | Descrição                                        | Linguagem | Link                 |
 | ------------------------------------------------ | --------- | -------------------- |
@@ -65,8 +60,6 @@ Sessão dedicada a algorítmos úteis e reutilizáveis
 ### Projetos 
 
 Projetos, em diversas linguagens, nos quais me envolvi
-
-##
 
 | Nome | Descrição | Linguagem | Link |
 | ------ | ------ | ------ |------ |
