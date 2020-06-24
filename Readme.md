@@ -11,6 +11,7 @@ Todos os módulos cursados até agora, desde Sistemas de Informação até Anál
 ##
 
 ### Mapa de Módulos
+_O que ja foi cursado até o presente momento_
 
 | Instituição | Curso   | Módulo | Link                 |
 | ----------- | ------- | ------ | -------------------- |
@@ -22,6 +23,7 @@ Todos os módulos cursados até agora, desde Sistemas de Informação até Anál
 ##
 
 ### Mapa de Repositórios
+_Repositórios importantes_
 
 | Nome           | Link                                | Conteúdo                         |
 | -------------- | ----------------------------------- | -------------------------------- |
@@ -30,7 +32,7 @@ Todos os módulos cursados até agora, desde Sistemas de Informação até Anál
 
 ##
 
-Para facilitar as buscas, a localização de todos os códigos estudados até o presente momento 
+_Para facilitar as buscas, a localização de todos os códigos estudados até o presente momento_ 
 
 | Matéria                         | Linguagem      | Link                 |
 | ------------------------------- | -------------- | -------------------- |
@@ -50,7 +52,7 @@ Para facilitar as buscas, a localização de todos os códigos estudados até o 
 
 ### Algorítmos Úteis
 
-Sessão dedicada a algorítmos úteis e reutilizáveis
+_Sessão dedicada a algorítmos úteis e reutilizáveis_
 
 | Descrição                                        | Linguagem | Link                 |
 | ------------------------------------------------ | --------- | -------------------- |
@@ -69,7 +71,7 @@ Sessão dedicada a algorítmos úteis e reutilizáveis
 
 ### Projetos 
 
-Projetos, em diversas linguagens, nos quais me envolvi
+_Projetos, em diversas linguagens, nos quais me envolvi_
 
 | Nome               | Descrição                                                         | Link                  |
 | ------------------ | ----------------------------------------------------------------- |  -------------------- |
