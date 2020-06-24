@@ -90,7 +90,7 @@ _Projetos, em diversas linguagens, nos quais me envolvi_
 
 ### TO-DO
 
- - Módulo Web   ![Inscrito!](https://github.com/M4NS0/Matriz.Curricular/blob/master/tick.png)
+ - Módulo Web   ![Inscrito!](https://github.com/M4NS0/Matriz.Curricular/blob/master/Tick.png)
  - Módulo Cliente/Servidor
  - Módulo Mobile
  - Módulo Final/Projeto Integrador
