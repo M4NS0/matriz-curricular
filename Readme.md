@@ -76,7 +76,7 @@ Projetos, em diversas linguagens, nos quais me envolvi
 
 ### TO-DO
 
- - Módulo Web
+ - Módulo Web <!-- inscrito -->
  - Módulo Cliente/Servidor
  - Módulo Mobile
  - Módulo Final/Projeto Integrador
