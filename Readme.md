@@ -71,8 +71,8 @@ Sessão dedicada a algorítmos úteis e reutilizáveis
 
 Projetos, em diversas linguagens, nos quais me envolvi
 
-| Nome           | Descrição                                                                                      | Linguagem               | Link                 |
-| -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- | -------------------- |
+|          Nome do Artefato          | Descrição                                                                                      | Linguagem               | Link                 |
+| ----------------------- | ---------------------------------------------------------------------------------------------- | ----------------------- | -------------------- |
 | Agenda Ligada  | Agenda de contatos em JFrame/Swing que contém uma Lista Ligada como Estrutura de Armazenamento | **Java**                | https://git.io/JfbDk |
 | Analizador CSV | Programa de Análise Estatística para Planilhas                                                 | **Java**                | https://git.io/JfbDI |
 | Calculadora    | Calculadora simples em JFrame/Swing                                                            | **Java**                | https://git.io/JfbDL |
@@ -82,9 +82,7 @@ Projetos, em diversas linguagens, nos quais me envolvi
 | Pokemon        | Jogo Temático                                                                                  | **Java**                | https://git.io/JfbDY |
 | StudLog        | Programa de Coleta de dados de uma máquina para fins Estatísticos                              | **Shell Script**        | https://git.io/JfbDO |
 
-
 #
-
 
 ### TO-DO
 
