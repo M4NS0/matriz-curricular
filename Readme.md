@@ -10,12 +10,23 @@ Todos os módulos cursados até agora, desde Sistemas de Informação até Anál
 
 ##
 
+### Mapa de Módulos
+
+| Instituição | Curso   | Módulo | Link                 |
+| ----------- | ------- | ------ | -------------------- |
+| Senac       | **SI**  | 1      | https://git.io/Jfp5V |
+| Senac       | **ADS** | 2      | https://git.io/Jfp5o |
+| PUC-Go      | **ADS** | 2      |https://git.io/Jfp51  |
+| PUC-Go      | **ADS** | 3 - Web|https://git.io/Jfp5F  |
+
+##
+
 ### Mapa de Repositórios
 
-| Nome           | Link                                | Conteúdo                           |
-| -------------- | ----------------------------------- | ---------------------------------- |
-| **Projetos**   | https://github.com/M4NS0/Projetos   | Repositório de projetos pessoais   |
-| **Workspaces** | https://github.com/M4NS0/Workspaces | Repositório com todos os códigos** |
+| Nome           | Link                                | Conteúdo                         |
+| -------------- | ----------------------------------- | -------------------------------- |
+| **Projetos**   | https://github.com/M4NS0/Projetos   | Repositório de projetos pessoais |
+| **Workspaces** | https://github.com/M4NS0/Workspaces | Repositório com todos os códigos |
 
 ##
 
@@ -66,13 +77,14 @@ Projetos, em diversas linguagens, nos quais me envolvi
 | Analizador CSV | Programa de Análise Estatística para Planilhas                                                 | **Java**                | https://git.io/JfbDI |
 | Calculadora    | Calculadora simples em JFrame/Swing                                                            | **Java**                | https://git.io/JfbDL |
 | Chat-in        | Comunicador Criptografado com Envio e Recebimento de Arquivos                                  | **Java**                | https://git.io/JfbDt |
-| EColeta        | Protótipo de Aplicativo Web de Empresa de Coleta de Resíduos                                   | **Html/Css/JavaScript** | https://git.io/JfbDq | va** | https://git.io/JfbDY |
+| EColeta        | Protótipo de Aplicativo Web de Empresa de Coleta de Resíduos                                   | **Html/Css/JavaScript** | https://git.io/JfbDq | 
 | Geo Ip Lookup  | Localizador geográfico por IP                                                                  | **Shell Script**        | https://git.io/JfbDm |
 | Pokemon        | Jogo Temático                                                                                  | **Java**                | https://git.io/JfbDY |
 | StudLog        | Programa de Coleta de dados de uma máquina para fins Estatísticos                              | **Shell Script**        | https://git.io/JfbDO |
-| StudLog        | Programa de Coleta de dados de uma máquina para fins Estatísticos                              | **Shell Script**        | https://git.io/JfbDO |
+
 
 #
+
 
 ### TO-DO
 
@@ -83,15 +95,13 @@ Projetos, em diversas linguagens, nos quais me envolvi
 
 #
 
-
 [Versão bonita dessa mesma página](https://m4ns0.github.io/)  
 [Curriculum vitae](https://)  
 
+|     |     |
+| --- | --- |
+|     |
 
+![ECEC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg ) |![PUC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/Ecec.png)
 
-
-
-|||
-|----|----|
-|![ECEC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg ) |![PUC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/Ecec.png)
 ||
