@@ -32,6 +32,8 @@ _Repositórios importantes_
 
 ##
 
+### Mapa de Estudos
+
 _Para facilitar as buscas, a localização de todos os códigos estudados até o presente momento_ 
 
 | Matéria                         | Linguagem      | Link                 |
@@ -88,7 +90,7 @@ _Projetos, em diversas linguagens, nos quais me envolvi_
 
 ### TO-DO
 
- - Módulo Web  <<_inscrito_>> 
+ - Módulo Web   ![Inscrito!](https://github.com/M4NS0/Matriz.Curricular/blob/master/tick.png)
  - Módulo Cliente/Servidor
  - Módulo Mobile
  - Módulo Final/Projeto Integrador
