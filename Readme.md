@@ -16,8 +16,8 @@ Todos os módulos cursados até agora, desde Sistemas de Informação até Anál
 | ----------- | ------- | ------ | -------------------- |
 | Senac       | **SI**  | 1      | https://git.io/Jfp5V |
 | Senac       | **ADS** | 2      | https://git.io/Jfp5o |
-| PUC-Go      | **ADS** | 2      |https://git.io/Jfp51  |
-| PUC-Go      | **ADS** | 3 - Web|https://git.io/Jfp5F  |
+| PUC-Go      | **ADS** | 2      | https://git.io/Jfp51 |
+| PUC-Go      | **ADS** | 3 - Web| https://git.io/Jfp5F |
 
 ##
 
@@ -71,16 +71,16 @@ Sessão dedicada a algorítmos úteis e reutilizáveis
 
 Projetos, em diversas linguagens, nos quais me envolvi
 
-| Nome               | Descrição                                                                                      | Link                  |
-| ------------------ | ---------------------------------------------------------------------------------------------- |  -------------------- |
-| **Agenda Ligada**  | Agenda de contatos em JFrame/Swing que contém uma Lista Ligada como Estrutura de Armazenamento |  https://git.io/JfbDk |
-| **Analizador CSV** | Programa de Análise Estatística para Planilhas                                                 |  https://git.io/JfbDI |
-| **Calculadora**    | Calculadora simples em JFrame/Swing                                                            |  https://git.io/JfbDL |
-| **Chat-in**        | Comunicador Criptografado com Envio e Recebimento de Arquivos                                  |  https://git.io/JfbDt |
-| **EColeta**        | Protótipo de Aplicativo Web de Empresa de Coleta de Resíduos                                   |  https://git.io/JfbDq | 
-| **Geo Ip Lookup**  | Localizador geográfico por IP                                                                  |  https://git.io/JfbDm |
-| **Pokemon**        | Jogo Temático                                                                                  |  https://git.io/JfbDY |
-| **StudLog**        | Programa de Coleta de dados de uma máquina para fins Estatísticos                              |  https://git.io/JfbDO |
+| Nome               | Descrição                                                         | Link                  |
+| ------------------ | ----------------------------------------------------------------- |  -------------------- |
+| **Agenda Ligada**  | Agenda de contatos em JFrame/Swing em Lista Ligada                |  https://git.io/JfbDk |
+| **Analizador CSV** | Programa de Análise Estatística para Planilhas                    |  https://git.io/JfbDI |
+| **Calculadora**    | Calculadora simples em JFrame/Swing                               |  https://git.io/JfbDL |
+| **Chat-in**        | Comunicador Criptografado com Envio e Recebimento de Arquivos     |  https://git.io/JfbDt |
+| **EColeta**        | Protótipo de Aplicativo Web de Empresa de Coleta de Resíduos      |  https://git.io/JfbDq | 
+| **Geo Ip Lookup**  | Localizador geográfico por IP                                     |  https://git.io/JfbDm |
+| **Pokemon**        | Jogo Temático                                                     |  https://git.io/JfbDY |
+| **StudLog**        | Programa de Coleta de dados de uma máquina para fins Estatísticos |  https://git.io/JfbDO |
 
 #
 
@@ -98,9 +98,6 @@ Projetos, em diversas linguagens, nos quais me envolvi
 
 |     |     |
 | --- | --- |
-|
+|![ECEC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg )| ![PUC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/Ecec.png) | 
+|||   
 
-![ECEC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg )| ![PUC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/Ecec.png)
-
-|    
-|||
