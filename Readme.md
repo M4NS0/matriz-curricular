@@ -92,7 +92,7 @@ _Projetos, em diversas linguagens, nos quais me envolvi_
 
 
 
- - Módulo Web   <img src="https://github.com/M4NS0/Matriz.Curricular/blob/master/Tick.png" alt="test" width="20" height="20">
+ - Módulo Web   <img src="https://github.com/M4NS0/Matriz.Curricular/blob/master/Tick.png" alt="test" width="20" height="20" style="vertical-align:middle">
  - Módulo Cliente/Servidor
  - Módulo Mobile
  - Módulo Final/Projeto Integrador
