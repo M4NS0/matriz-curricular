@@ -12,35 +12,34 @@ Todos os módulos cursados até agora, desde Sistemas de Informação até Anál
 
 ### Mapa de Repositórios
 
-| Nome           | Link                                | Conteúdo                         |
-| -------------- | ----------------------------------- | -------------------------------- |
-| **Projetos**   | https://github.com/M4NS0/Projetos   | Repositório de projetos pessoais |
+| Nome           | Link                                | Conteúdo                           |
+| -------------- | ----------------------------------- | ---------------------------------- |
+| **Projetos**   | https://github.com/M4NS0/Projetos   | Repositório de projetos pessoais   |
 | **Workspaces** | https://github.com/M4NS0/Workspaces | Repositório com todos os códigos** |
 
 ##
 
-
 Para facilitar as buscas, a localização de todos os códigos estudados até o presente momento 
 
-| Matéria                         | Linguagem  | Link                 |
-| ------------------------------- | ---------- | -------------------- |
-| Estrutura de Dados              | **Java**   | https://git.io/JfbMP |
-| Fundamentos                     | **Java**   | https://git.io/JfbMX |
-| Fundamentos                     | **JavaScript**   | https://git.io/Jfxhd |
-| Fundamentos                     | **Python** | https://git.io/JfbM1 |
-| Fundamentos                     | **Julia**  | https://git.io/JfbMD |
-| Fundamentos                     | **C ++**   | https://git.io/JfbMS |
-| Fundamentos                     | **SQL**    | https://git.io/JfbM9 |
-| Logica de Programação           | **Java**   | https://git.io/JfbMQ |
-| Logica de Programação           | **Python** | https://git.io/JfbM7 |
-| Programação Orientada a Objetos | **Java**   | https://git.io/JfbM5 |
-| Técnicas de Programação         | **Java**   | https://git.io/JfbMd |
+| Matéria                         | Linguagem      | Link                 |
+| ------------------------------- | -------------- | -------------------- |
+| Estrutura de Dados              | **Java**       | https://git.io/JfbMP |
+| Fundamentos                     | **Python**     | https://git.io/JfbM1 |
+| Fundamentos                     | **SQL**        | https://git.io/JfbM9 |
+| Fundamentos                     | **Julia**      | https://git.io/JfbMD |
+| Fundamentos                     | **C ++**       | https://git.io/JfbMS |
+| Fundamentos                     | **Java**       | https://git.io/JfbMX |
+| Fundamentos                     | **JavaScript** | https://git.io/Jfxhd |
+| Logica de Programação           | **Python**     | https://git.io/JfbM7 |
+| Logica de Programação           | **Java**       | https://git.io/JfbMQ |
+| Programação Orientada a Objetos | **Java**       | https://git.io/JfbM5 |
+| Técnicas de Programação         | **Java**       | https://git.io/JfbMd |
 
 ##
 
 ### Algorítmos Úteis
-Sessão dedicada a algorítmos úteis e reutilizáveis
 
+Sessão dedicada a algorítmos úteis e reutilizáveis
 
 | Descrição                                        | Linguagem | Link                 |
 | ------------------------------------------------ | --------- | -------------------- |
@@ -61,16 +60,16 @@ Sessão dedicada a algorítmos úteis e reutilizáveis
 
 Projetos, em diversas linguagens, nos quais me envolvi
 
-| Nome | Descrição | Linguagem | Link |
-| ------ | ------ | ------ |------ |
-| Agenda Ligada | Agenda de contatos em JFrame/Swing que contém uma Lista Ligada como Estrutura de Armazenamento  | **Java** |https://git.io/JfbDk|
-| Analizador CSV | Programa de Análise Estatística para Planilhas | **Java** |https://git.io/JfbDI|
-| Calculadora | Calculadora simples em JFrame/Swing | **Java** |https://git.io/JfbDL |
-| Chat-in | Comunicador Criptografado com Envio e Recebimento de Arquivos | **Java** | https://git.io/JfbDt |
-| EColeta | Protótipo de Aplicativo Web de Empresa de Coleta de Resíduos | **Html/Css/JavaScript** | https://git.io/JfbDq |va**                | https://git.io/JfbDY |
-| Geo Ip Lookup | Localizador geográfico por IP | **Shell Script** | https://git.io/JfbDm |
-| Pokemon | Jogo Temático | **Java** |https://git.io/JfbDY |
-| StudLog | Programa de Coleta de dados de uma máquina para fins Estatísticos |**Shell Script** | https://git.io/JfbDO |
+| Nome           | Descrição                                                                                      | Linguagem               | Link                 |
+| -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- | -------------------- |
+| Agenda Ligada  | Agenda de contatos em JFrame/Swing que contém uma Lista Ligada como Estrutura de Armazenamento | **Java**                | https://git.io/JfbDk |
+| Analizador CSV | Programa de Análise Estatística para Planilhas                                                 | **Java**                | https://git.io/JfbDI |
+| Calculadora    | Calculadora simples em JFrame/Swing                                                            | **Java**                | https://git.io/JfbDL |
+| Chat-in        | Comunicador Criptografado com Envio e Recebimento de Arquivos                                  | **Java**                | https://git.io/JfbDt |
+| EColeta        | Protótipo de Aplicativo Web de Empresa de Coleta de Resíduos                                   | **Html/Css/JavaScript** | https://git.io/JfbDq | va** | https://git.io/JfbDY |
+| Geo Ip Lookup  | Localizador geográfico por IP                                                                  | **Shell Script**        | https://git.io/JfbDm |
+| Pokemon        | Jogo Temático                                                                                  | **Java**                | https://git.io/JfbDY |
+| StudLog        | Programa de Coleta de dados de uma máquina para fins Estatísticos                              | **Shell Script**        | https://git.io/JfbDO |
 | StudLog        | Programa de Coleta de dados de uma máquina para fins Estatísticos                              | **Shell Script**        | https://git.io/JfbDO |
 
 #
@@ -87,3 +86,10 @@ Projetos, em diversas linguagens, nos quais me envolvi
 
 [Versão bonita dessa mesma página](https://m4ns0.github.io/)  
 [Curriculum vitae](https://)  
+
+
+
+![PUC Logo](https://cutt.ly/3iyzd3C)
+
+
+![Alt Text](https://cutt.ly/3iyzd3C)
