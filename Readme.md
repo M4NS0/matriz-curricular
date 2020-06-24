@@ -71,21 +71,18 @@ Sessão dedicada a algorítmos úteis e reutilizáveis
 
 Projetos, em diversas linguagens, nos quais me envolvi
 
-| Nome           | Descrição                                                                                      | Linguagem               | Link                 |
-| -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- | -------------------- |
-| Agenda Ligada  | Agenda de contatos em JFrame/Swing que contém uma Lista Ligada como Estrutura de Armazenamento | **Java**                | https://git.io/JfbDk |
-| Analizador CSV | Programa de Análise Estatística para Planilhas                                                 | **Java**                | https://git.io/JfbDI |
-| Calculadora    | Calculadora simples em JFrame/Swing                                                            | **Java**                | https://git.io/JfbDL |
-| Chat-in        | Comunicador Criptografado com Envio e Recebimento de Arquivos                                  | **Java**                | https://git.io/JfbDt |
-| EColeta        | Protótipo de Aplicativo Web de Empresa de Coleta de Resíduos                                   | **Html/Css/JavaScript** | https://git.io/JfbDq | 
-| Geo Ip Lookup  | Localizador geográfico por IP                                                                  | **Shell Script**        | https://git.io/JfbDm |
-| Pokemon        | Jogo Temático                                                                                  | **Java**                | https://git.io/JfbDY |
-| StudLog        | Programa de Coleta de dados de uma máquina para fins Estatísticos                              | **Shell Script**        | https://git.io/JfbDO |
-
+| Nome               | Descrição                                                                                      | Link                  |
+| ------------------ | ---------------------------------------------------------------------------------------------- |  -------------------- |
+| **Agenda Ligada**  | Agenda de contatos em JFrame/Swing que contém uma Lista Ligada como Estrutura de Armazenamento |  https://git.io/JfbDk |
+| **Analizador CSV** | Programa de Análise Estatística para Planilhas                                                 |  https://git.io/JfbDI |
+| **Calculadora**    | Calculadora simples em JFrame/Swing                                                            |  https://git.io/JfbDL |
+| **Chat-in**        | Comunicador Criptografado com Envio e Recebimento de Arquivos                                  |  https://git.io/JfbDt |
+| **EColeta**        | Protótipo de Aplicativo Web de Empresa de Coleta de Resíduos                                   |  https://git.io/JfbDq | 
+| **Geo Ip Lookup**  | Localizador geográfico por IP                                                                  |  https://git.io/JfbDm |
+| **Pokemon**        | Jogo Temático                                                                                  |  https://git.io/JfbDY |
+| **StudLog**        | Programa de Coleta de dados de uma máquina para fins Estatísticos                              |  https://git.io/JfbDO |
 
 #
-
-
 
 ### TO-DO
 
@@ -101,5 +98,9 @@ Projetos, em diversas linguagens, nos quais me envolvi
 
 |     |     |
 | --- | --- |
-|![ECEC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg )| ![PUC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/Ecec.png)|    
+|
+
+![ECEC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg )| ![PUC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/Ecec.png)
+
+|    
 |||
