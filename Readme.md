@@ -89,7 +89,7 @@ Projetos, em diversas linguagens, nos quais me envolvi
 
 
 
-![PUC Logo](https://cutt.ly/3iyzd3C)
+![PUC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg)
 
 
-![Alt Text](https://cutt.ly/3iyzd3C)
+![Alt Text](https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg)
