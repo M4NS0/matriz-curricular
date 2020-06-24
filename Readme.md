@@ -89,4 +89,4 @@ Projetos, em diversas linguagens, nos quais me envolvi
 
 
 
-<img src="https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg" width=300 align=center>
+<img src="https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg" width=300>
