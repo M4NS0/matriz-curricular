@@ -91,7 +91,7 @@ Projetos, em diversas linguagens, nos quais me envolvi
 
 
 
-|||
-|----|----|
-![PUC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/Ecec.png) |![PUC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg)
-|||
+|||||
+|----|----|----|----|
+||![PUC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/Ecec.png) |![PUC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg)
+||||
