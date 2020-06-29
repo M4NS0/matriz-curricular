@@ -44,7 +44,7 @@ _Para facilitar as buscas, a localização de todos os códigos estudados até o
 | Fundamentos                     | **Julia**      | https://git.io/JfbMD |
 | Fundamentos                     | **C ++**       | https://git.io/JfbMS |
 | Fundamentos                     | **Java**       | https://git.io/JfbMX |
-| Fundamentos                     | **JavaScript** | https://git.io/Jfxhd |
+| Fundamentos                     | **JavaScript** | https://git.io/JJfIb |
 | Logica de Programação           | **Python**     | https://git.io/JfbM7 |
 | Logica de Programação           | **Java**       | https://git.io/JfbMQ |
 | Programação Orientada a Objetos | **Java**       | https://git.io/JfbM5 |
