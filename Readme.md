@@ -69,6 +69,7 @@ _Sessão dedicada a algorítmos úteis e reutilizáveis_
 | Reconhecimento de Texto em Imagem (com Gravação) | **Java**  | https://git.io/JfbDJ |
 | Reconhecimento de Texto em imagem                | **Java**  | https://git.io/JfbDU |
 
+
 ##
 
 ### Projetos 
