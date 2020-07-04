@@ -108,4 +108,4 @@ _Projetos, em diversas linguagens, nos quais me envolvi_
 |![ECEC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/puc.jpg )| ![PUC Logo](https://github.com/M4NS0/Matriz.Curricular/blob/master/Ecec.png) | 
 |||   
 
-![MC](https://github.com/M4NS0/Matriz.Curricular/blob/master/PUC ADS Matriz Curricular.png)
+![MC](https://github.com/M4NS0/Matriz.Curricular/blob/master/PUC%20ADS%20Matriz%20Curricular.png)
