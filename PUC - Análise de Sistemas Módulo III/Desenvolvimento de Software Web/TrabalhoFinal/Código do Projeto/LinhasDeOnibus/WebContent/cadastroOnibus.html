@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Cadastro de onibus</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<style>
+body {
+	background: rgb(128, 56, 163); 
+	background: radial-gradient(circle, rgb(189, 255, 136) 0%, rgb(45, 160, 135) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9de96', endColorstr='#398235', GradientType=0);
+}
+
+.alinhar {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	
+	<div id="mensagem" class="alinhar"></div>
+	<div id="divPesq" class="alinhar">
+	  <label><strong>Pesquisar</strong></label><br>
+	  <select id="tipoPesq" class="form-control">
+	    <option value="0" selected>Selecione um tipo de pesquisa</option>
+	    <option value="1">Por Modelo</option>
+	    <option value="2">Por Identificação</option>
+	    
+	  </select>
+	  <p><input type="text" class="form-control" style="text-align:center" id="txtPesq"/></p>
+	  <p><button id="btnPesq" onclick="$.pesquisar()"  class="btn btn-warning">Pesquisar</button></p>
+	  <br>
+	</div>
+	
+	<div id="divTabela" class="alinhar"></div>
+
+	<div id="divForm" class="alinhar"></div>
+
+	<div class="modal fade" id="modalMensagem">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Aviso</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span>x</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div id="msgModal"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalConfirma">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Confirmação</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span>x</span>
+					</button>
+				</div>
+				<div class="modal-body">Confirma exclusão?</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" id="btn-fechar"
+						data-dismiss="modal">Fechar</button>
+					<button type="button" class="btn btn-success" id="btn-confirmar"
+						data-dismiss="modal">Confirmar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script>
+	
+	  var linhaSelecionada=0;
+	  var motoristaSelecionado=0;
+	
+	  function excluir(codigo)
+	  {
+		$.excluir(codigo);
+	  }
+		   
+	  function editar(codigo)
+	  {
+		$.mostraForm();
+		
+		$.populaForm(codigo);
+	    
+		 $("linhaForm").html("");
+		 $.populaSelectLinha();
+		 
+		 $("motoristaForm").html("");
+		 $.populaSelectMotorista(); 
+	  }
+		   
+	  function novo()
+	  {
+		$.mostraForm();
+		$.populaSelectLinha();
+		$.populaSelectMotorista();
+	  }
+	
+	  function salvar()
+	  {
+		$.salvar();
+	  }
+	   	   
+	  function preparaForm()
+	  {
+		return(
+				 '<br><br>'+
+				 '<b>CADASTRO DE ONIBUS</b></br>'+
+				 '<div class="form-group">'+
+				 '<strong>Identificação do onibus</strong><input class="form-control" style="text-align:center" id="idonibusForm" readonly>'+ 
+				 '</div>'+
+				 '<div class="form-group">'+
+				 '<strong>Numero do onibus</strong><input class="form-control" style="text-align:center" id="numerodoonibusForm">'+ 
+				 '</div>'+
+				 '<div class="form-group">'+
+				 '<strong>Modelo do onibus</strong><input class="form-control" style="text-align:center" id="modeloForm">'+ 
+				 '</div>'+
+				 '<div class="form-group">'+
+				 '<strong>Chassi do onibus</strong><input class="form-control" style="text-align:center" id="chassiForm">'+
+				 '</div>'+
+				 
+				 '<div class="form-group">'+
+				 '<strong>Linha</strong>'+
+				        '<select class="form-control" style="text-align:center" id="linhaForm" onchange="$.obtemCodLinha(this);">'+
+				        '</select>'+
+				 '</div>'+
+				 '<button class="btn btn-warning" onclick="$.populaSelectLinha()">ATUALIZAR LINHAS</button>'+
+				 '<br>' + '<br>' +
+				 
+				 '<div class="form-group">'+
+				 '<strong>Motorista</strong>'+
+				        '<select class="form-control" style="text-align:center" id="motoristaForm" onchange="$.obtemCodMotorista(this);">'+
+				        '</select>'+
+				 '</div>'+
+				 '<button class="btn btn-warning" onclick="$.populaSelectMotorista()">ATUALIZAR MOTORISTAS</button>'+
+				 '<br>' + '<br>' + '<br>' +
+				 
+				 '<button class="btn btn-success" onclick="salvar()">SALVAR</button>'+
+				 '<button class="btn btn-danger" onclick="$.limpar()">LIMPAR</button>'
+			  );   
+     }
+	
+	function mostraCabTabela () 
+	{
+	    return(
+				 '<table class="table table-striped-primary table-hover" >' +
+				 '<thead>' +
+				 '<tr>' +
+				 '<th style="text-align: center" scope="col">Identificação do onibus</th>' +
+				 '<th style="text-align: center" scope="col">Numero do onibus</th>' +
+				 '<th style="text-align: center" scope="col">Modelo do onibus</th>' +
+				 '<th style="text-align: center" scope="col">Chassi do onibus</th>' +
+				 '<th style="text-align: center" scope="col">Identificação da linha</th>' +
+				 '<th style="text-align: center" scope="col">Descrição da linha</th>' +
+				 '<th style="text-align: center" scope="col">Identificação do motorista</th>' +
+				 '<th style="text-align: center" scope="col">Nome do Motorista</th>' +
+				 '</tr>' +
+				 '</thead>'
+			  );
+	}
+
+	
+	function mostraLinhaTabela(data) 
+	{
+		return(
+			     '<tr><td style="text-align: center; color:#FF0000">' + data.idOnibus + '</td>' +
+				 '<td style="text-align: center">' + data.numeroDoOnibus + '</td>' +
+				 '<td style="text-align: center">' + data.modelo + '</td>' +
+				 '<td style="text-align: center">' + data.chassi + '</td>' +
+				 '<td style="text-align: center">' + data.linha.idLinha + '</td>' +
+				 '<td style="text-align: center">' + data.linha.descricao + '</td>' +
+				 '<td style="text-align: center">' + data.motorista.idMotorista + '</td>' +
+				 '<td style="text-align: center">' + data.motorista.nome + '</td>' +
+				 '<td style="text-align: center"><button class="btn btn-success" id="btnEditar" onclick="editar(' + data.idOnibus + ')">Edite</button></td>' +
+				 '<td style="text-align: center"><button class="btn btn-danger" id="btnExcluir" onclick="$.excluir(' + data.idOnibus + ')">Exclui</button></td></tr>'
+			  );
+    }
+
+	function carregaTabela () 
+	{
+		$.ajax({
+				  url: "http://localhost:8282/LinhasDeOnibus/servletallonibus",
+				  type: 'get',
+				  data: {},
+				  beforeSend: function() { $("#mensagem").html("Analisando dados..."); },
+				  success: function(colecao) 
+				  {
+					  
+					let table = mostraCabTabela() + '<tbody>';
+
+					for(let i=0;i < colecao.length; i++) { table += mostraLinhaTabela(colecao[i]); }
+					table += '</tbody></table>';
+					table += '</br><button class="btn btn-primary" onclick="novo()">NOVO</button>';
+					//
+					$('#divTabela').html(table);
+					$('#mensagem').html('');
+					$('#divForm').html('');
+                    if (colecao.length == 0)
+    					$.mostraMensagem("Sem onibus cadastrados");
+				  },
+				  
+				  error: function(msg) 
+				  {
+					$("#mensagem").html(" ");
+					$.mostraMensagem("erro");
+				  }
+			  });
+	}
+
+	$(document).ready(function() 
+	{
+		      
+		    
+		      $.obtemCodLinha = function(linhavalor)
+		      {
+		    	  linhaSelecionada=linhavalor.value;
+		      };
+		      
+		      $.obtemCodMotorista = function(motvalor)
+		      {
+		    	  motoristaSelecionado=motvalor.value;
+		      };
+		      
+		      
+			  carregaTabela();
+
+			  $.excluir = function (codigo) 
+			  {
+				   $("#modalConfirma").modal();
+				   $("#btn-confirmar").click(function()
+				   {
+					   
+					   $.ajax(
+							   {
+									url : "http://localhost:8282/LinhasDeOnibus/servletexcluirporidonibus",
+									type : 'get',
+									data :{ codigo : codigo	},
+									beforeSend : function()
+									{
+									   $("#mensagem").text("Analisando a solicitação...");
+									},
+									
+									success: function(msg)
+									{
+									   $("#divForm").html("");	
+									   $("#mensagem").html(" ");
+									   $.mostraMensagem("Exclusão efetuada com sucesso");
+									   carregaTabela();
+									},
+									error: function(msg)
+									{
+									   $("#mensagem").html(" ");
+									   $.mostraMensagem("Erro de exclusão");
+									}
+							   });
+
+				   });
+				   
+			};
+
+			$.editar = function (codigo) 
+			{
+			   $.ajax(
+			   {
+					 url : "http://localhost:8282/LinhasDeOnibus/servleteditarporidonibus",
+					 type : 'get',
+					 data : { codigo : codigo },
+					 beforeSend : function()
+					 {
+						  $("#mensagem").html("Analisando a solicitação...");
+					 },
+					
+					 success: function(msg)
+					 {
+						$("#mensagem").html(" ");
+						$("msgModal").text(msg);
+						$('#modalMensagem').modal('show');
+						carregaTabela();
+					 },
+					 error: function(msg)
+					 {
+						$("#mensagem").html(" ");
+						$("msgModal").text(msg);
+						$('#modalMensagem').modal('show');
+					}
+			   });
+			 };
+			 
+			$.mostraForm = function () 
+			{
+				 $("#divForm").html("");	
+				 $("#divForm").html(preparaForm());	
+				 $("#mensagem").html("");
+			};
+				
+			$.salvar = function()
+			{
+					let idonibus = $("#idonibusForm").val();
+					let numerodoonibus = $("#numerodoonibusForm").val();
+					let modelo = $("#modeloForm").val();
+					let chassi = $("#chassiForm").val();
+
+					let idLinha = linhaSelecionada;
+					let idMotorista = motoristaSelecionado;
+					
+					if (idonibus === "")
+					{
+						idonibus=0;
+					}
+					if (modelo.length ==0 || modelo =="") {
+						modelo = "Não informado";
+					}
+					if (chassi.length ==0 || chassi =="") {
+						chassi = "Não informado";
+					}
+					
+					if (numerodoonibus.length ==0 || numerodoonibus =="") {
+						$.mostraMensagem("O numero do onibus deve ser informado");
+					}
+					else {
+						 if (!$.isNumeric(numerodoonibus)) {
+							 $.mostraMensagem("So é aceito numeros para o numero do onibus");
+						 }
+						 else {
+							 if(numerodoonibus.length > 9) {
+								 $.mostraMensagem("Numero do onibus tem um tamanho maximo de 9 numeros");
+							 }
+							 else {
+								 if (idLinha == 0) {
+										$.mostraMensagem("Uma linha deve ser selecionada");
+									}
+									else { 
+										if (idMotorista == 0) {
+											$.mostraMensagem("Um motorista deve ser selecionado");
+										}
+										else {
+											$.enviarDadosCadastro(idonibus, numerodoonibus, modelo, chassi, idLinha, idMotorista);
+											linhaSelecionada=0;
+											motoristaSelecionado=0;
+										}
+								   }
+							 }
+						 }
+					}   	
+				}
+			 
+			$.enviarDadosCadastro = function(idonibus, numerodoonibus, modelo, chassi, idLinha, idMotorista)
+			{
+					$.ajax(
+					{
+							 url : "http://localhost:8282/LinhasDeOnibus/servletsalvardadosonibus",
+							 type : 'get',
+							 data : {
+									  idonibus: idonibus,
+									  numerodoonibus: numerodoonibus,
+									  modelo: modelo,
+									  chassi : chassi,
+									  idLinha : idLinha,
+									  idMotorista : idMotorista
+							 },
+							 beforeSend : function()
+							 {
+								  $("#mensagem").html("Enviando / salvando dados...");
+							 },
+							 success: function(msg)
+							 {
+								
+								$("#mensagem").html(" ");
+								$.mostraMensagem(msg.mensagem);
+								carregaTabela();
+							 },
+							 error: function(msg)
+							 {
+								$("#mensagem").html(" ");
+								$.mostraMensagem(msg.mensagem);
+							}
+					  });
+		   }
+				
+		   $.populaForm = function (codigo) 
+		   {
+				$.ajax(
+				{
+					 url : "http://localhost:8282/LinhasDeOnibus/servletconsultaporidonibus",
+					 type : 'get',
+					 data : {
+							   codigo: codigo,
+							},
+							beforeSend : function()
+							{
+								$("#mensagem").html("Consultando dados...");
+						    },
+						    
+						  
+						    success: function(objeto)
+							{
+								$("#mensagem").html(" ");
+								if (objeto.id !=0)
+								{
+									$("#idonibusForm").val(objeto.idOnibus);
+									$("#numerodoonibusForm").val(objeto.numeroDoOnibus);
+									$("#modeloForm").val(objeto.modelo);
+									$("#chassiForm").val(objeto.chassi);
+									
+									$("#linhaForm").val(objeto.linha.idLinha);
+									linhaSelecionada=objeto.linha.idLinha;
+									$("#motoristaForm").val(objeto.motorista.idMotorista);
+									motoristaSelecionado = objeto.motorista.idMotorista;
+								}
+							},
+							error: function(objeto)
+							{
+								$("#mensagem").html(" ");
+								$.mostraMensagem(objeto[0].mensagem);
+							}
+				})	     
+		 };
+				
+		 
+		 $.limpar = function()
+		 {
+			$("#divForm").html("");
+		 }
+
+		 
+		 $.mostraMensagem = function(msg)
+		 {
+			 $("#msgModal").text(msg);
+			 $("#modalMensagem").modal();
+		 }
+		 
+		 $.pesquisar = function(){
+			  let pesquisar = $("#txtPesq").val();
+			  let tipoPesq=$("#tipoPesq").val();
+			  let pesqOK=false;
+			  let url="";
+			  if (tipoPesq==0)
+			  {
+				  $.mostraMensagem("Selecione um tipo de pesquisa");
+			  }	  
+			  else
+			  {
+				  if (tipoPesq==2)
+				  {
+					  if (!$.isNumeric(pesquisar))
+					  {
+					      $.mostraMensagem("Informe só números para um código desejado");
+					      
+					  }
+					  else {
+						   pesqOK=true;
+						   url="http://localhost:8282/LinhasDeOnibus/servletconsultaporidlistaonibus";
+					  }
+				  }
+				  else {
+					   pesqOK=true;
+					   url="http://localhost:8282/LinhasDeOnibus/servletconsultapormodeloonibus";
+				  }
+			  }
+			 
+			  if (pesqOK)
+			  {	  
+				$.ajax(
+						{
+							 url : url,
+							 type : 'get',
+							 data : {
+									   pesquisar: pesquisar,
+									},
+									beforeSend : function()
+									{
+										$("#mensagem").html("Consultando dados...");
+								    },
+									success: function(colecao)
+									{
+										let table = mostraCabTabela() + '<tbody>';
+
+										for(let i=0;i < colecao.length; i++) { table += mostraLinhaTabela(colecao[i]); }
+										table += '</tbody></table>';
+										table += '</br><button class="btn btn-primary" onclick="novo()">NOVO</button>';
+										$('#divTabela').html(table);
+										$('#mensagem').html('');
+										$('#divForm').html('');
+					                    if (colecao.length == 0 || colecao == null)
+					    					$.mostraMensagem("Onibus não encontrado(s)");
+									},
+									error: function(objeto)
+									{
+										$("#mensagem").html(" ");
+										$.mostraMensagem(objeto[0].mensagem);
+									}
+						})	     
+			  };
+		 
+		 }
+		 
+		   $.populaSelectLinha = function () 
+		   {    
+			    let html = '';
+			    html='<option value="0">Selecione uma linha</option>';
+			    $("#linhaForm").html("");
+				$.ajax(
+				{
+
+					url:"http://localhost:8282/LinhasDeOnibus/servletalllinha",
+					type : 'get',
+					 data : { },
+							beforeSend : function()
+							{
+								$("#mensagem").html("Consultando dados...");
+						    },
+							success: function(colecao)
+							{
+								$("#mensagem").html(" ");
+							
+								if (colecao.length > 0)
+								{
+									for(i=0; i<colecao.length; i++)
+									{
+									    html+='<option value="'+colecao[i].idLinha+'">';
+									    html+=colecao[i].descricao+'</option><br>';
+									}
+									$("#linhaForm").html(html);
+								}
+							},
+							
+							error: function(msg)
+							{
+								$("#mensagem").html(" ");
+							}
+				})	     
+		 };
+		 
+		 
+		 
+		 $.populaSelectMotorista = function () 
+		   {
+			    let html = '';
+			    html='<option value="0">Selecione um motorista</option>';
+			    $("#motoristaForm").html("");
+				$.ajax(
+				{
+					url:"http://localhost:8282/LinhasDeOnibus/servletallmotorista",
+					type : 'get',
+					 data : { },
+							beforeSend : function()
+							{
+								$("#mensagem").html("Consultando dados...");
+						    },
+							success: function(colecao)
+							{
+								$("#mensagem").html(" ");
+							
+								if (colecao.length >0)
+								{
+									for(i=0; i<colecao.length; i++)
+									{
+									    html+='<option value="'+colecao[i].idMotorista+'">';
+									    html+=colecao[i].nome+'</option><br>';										
+									}
+									$("#motoristaForm").html(html);
+								}
+							},
+							error: function(msg)
+							{
+								$("#mensagem").html(" ");
+							}
+				})	     
+		 };
+
+	});
+		   
+	</script>
+</body>
+</html>

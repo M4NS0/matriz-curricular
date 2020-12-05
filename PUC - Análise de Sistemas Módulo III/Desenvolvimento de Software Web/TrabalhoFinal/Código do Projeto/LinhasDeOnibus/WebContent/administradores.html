@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Administradores</title>
+    <style>
+        body {
+            background: rgb(128, 56, 163);
+            background: radial-gradient(circle, rgb(189, 255, 136) 0%,
+                    rgb(45, 160, 135) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9de96',
+                    endColorstr='#398235', GradientType=0);
+        }
+
+        .container {
+            margin-left: 60vh;
+            width: 40%;
+            text-align: center;
+            margin-bottom: 15vh;
+        }
+
+        #cadastroMotorista,
+        #cadastroLinha, 
+        #cadastroOnibus,
+        #visualizarLinha,
+        #visualizarOnibus,
+        #visualizarMotorista
+        {
+            width: 150px;
+            height: 30px;
+            border-radius: 5px;
+            box-shadow: 1px 1px #29292990;
+            border-color: gray;
+            background-color: gold;
+            margin: 10px;
+        }
+
+        h4 {
+            margin-top: 10vh;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        html body div.container footer button#voltar.btn.btn-alert {
+            margin-top: 50px;
+            height: 30px;
+            border-radius: 5px;
+            box-shadow: 1px 1px #29292990;
+            color: whitesmoke;
+            border-color: gray;
+            background-color: rgb(190, 22, 22);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h2>Cadastros </h2>
+            <button type="button" class="btn btn-light" id="cadastroLinha">Linhas</button>
+            <button type="button" class="btn btn-light" id="cadastroOnibus">Ônibus</button>
+            <button type="button" class="btn btn-light" id="cadastroMotorista">Motoristas</button>
+        </div>
+        <div>
+            <h2>Consultas </h2>
+            <button type="button" class="btn btn-light" id="visualizarLinha">Linhas</button>
+            <button type="button" class="btn btn-light" id="visualizarOnibus">Ônibus</button>
+            <button type="button" class="btn btn-light" id="visualizarMotorista">Motoristas</button>
+        </div>
+
+        <footer>
+            <button type="button" class="btn btn-alert" id="voltar" action="action"
+            onclick="window.history.go(-1); return false; sessionStorage.clear();"
+            type="submit"
+            value="Cancel">Ecerrar sessão</button>
+ 
+        </footer>
+
+    </div>
+    <div class="table-responsive-sm">
+        <div id="conteudo">
+        </div>
+    </div>
+    
+    <script src="jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+         
+    <script>
+
+        $(document).ready(function () {
+        	
+            $("#cadastroLinha").click(function () {
+                $("#conteudo").load("cadastroLinha.html");
+            });
+            
+            $("#cadastroOnibus").click(function () {
+        		$("#conteudo").load("cadastroOnibus.html");
+        	});
+            
+            $("#cadastroMotorista").click(function () {
+            	
+                $("#conteudo").load("cadastroMotorista.html");
+            });
+            
+            $("#visualizarLinha").click(function () {
+                $("#conteudo").load("visualizarLinha.html");
+            });
+            
+            $("#visualizarOnibus").click(function () {
+                $("#conteudo").load("visualizarOnibus.html");
+            });
+            
+            $("#visualizarMotorista").click(function () {
+                $("#conteudo").load("visualizarMotorista.html");
+            });
+            
+        });
+  
+    </script>
+</body>
+</html>
